@@ -1,8 +1,8 @@
 const socket = require('socket.io-client')('http://192.168.1.194:8000');
 const mongoose = require("mongoose");
 
-const Scenes = require("./models/Scenes");
-const Measurements = require("./models/Measurements");
+const Scenes = require("../models/Scenes");
+const Measurements = require("../models/Measurements");
 
 const tzoffset = (new Date()).getTimezoneOffset() * 60000;
 
